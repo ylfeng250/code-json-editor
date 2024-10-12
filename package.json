@@ -1,0 +1,57 @@
+{
+  "name": "code-json-editor",
+  "version": "1.0.2",
+  "description": "一个基于 monaco-editor 修改的JSON 编辑器，用来快速编辑 JSON 数据，支持 JSON Schema 校验",
+  "scripts": {
+    "start": "webpack serve --config webpack.dev.config.js --mode development",
+    "build": "webpack --mode production",
+    "analyze": "webpack-bundle-analyzer dist/stats.json"
+  },
+  "main": "dist/index.js",
+  "types": "dist/types/index.d.ts",
+  "module": "dist/index.esm.js",
+  "files": [
+    "dist",
+    "package.json",
+    "readme.md"
+  ],
+  "keywords": [
+    "json",
+    "json-editor",
+    "json-schema",
+    "json-view",
+    "json-viewer",
+    "json-editor-react",
+    "monaco"
+  ],
+  "author": "ylfeng250",
+  "dependencies": {
+    "@monaco-editor/react": "^4.6.0"
+  },
+  "peerDependencies": {
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
+  "devDependencies": {
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "@babel/core": "^7.25.8",
+    "@babel/preset-env": "^7.25.8",
+    "@babel/preset-react": "^7.25.7",
+    "@babel/preset-typescript": "^7.25.7",
+    "@types/react": "^18.3.11",
+    "@types/react-dom": "^18.3.1",
+    "babel-loader": "^9.2.1",
+    "clean-webpack-plugin": "^4.0.0",
+    "css-loader": "^7.1.2",
+    "html-webpack-plugin": "^5.6.0",
+    "mini-css-extract-plugin": "^2.9.1",
+    "style-loader": "^4.0.0",
+    "ts-loader": "^9.5.1",
+    "typescript": "^5.6.3",
+    "webpack": "^5.95.0",
+    "webpack-bundle-analyzer": "^4.10.2",
+    "webpack-cli": "^5.1.4",
+    "webpack-dev-server": "^5.1.0"
+  }
+}
